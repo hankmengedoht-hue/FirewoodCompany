@@ -14,18 +14,37 @@
   <header>
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-icon">🪵</span>
-        <span class="logo-text">The Firewood Company</span>
+        <a href="index.html" class="logo-link">
+          <span class="logo-icon">🪵</span>
+          <span class="logo-text">The Firewood Company</span>
+        </a>
       </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#firewood">Firewood</a>
-        <a href="#delivery">Delivery</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact" class="btn-nav">Contact Us</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#firewood">Firewood</a>
+        <a href="index.html#delivery">Delivery</a>
+        <a href="index.html#testimonials">Reviews</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="index.html#contact" class="btn-nav">Contact Us</a>
       </nav>
     </div>
   </header>
+
+  <script>
+    const btn = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded', false);
+    }));
+  </script>
 
   <!-- HERO -->
   <section class="hero">

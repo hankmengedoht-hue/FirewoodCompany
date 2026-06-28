@@ -67,14 +67,12 @@
           <div class="pricing-qty">Bundle</div>
           <div class="pricing-desc">A small bundle — great for a single evening by the fire or trying us out for the first time.</div>
           <div class="pricing-price">$—</div>
-          <div class="pricing-detail">~0.75 cu ft</div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-qty">Face Cord</div>
           <div class="pricing-desc">One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.</div>
           <div class="pricing-price">$—</div>
-          <div class="pricing-detail">~42 cu ft</div>
         </div>
 
         <div class="pricing-card pricing-card--featured">
@@ -82,28 +80,24 @@
           <div class="pricing-qty">Half Cord</div>
           <div class="pricing-desc">Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.</div>
           <div class="pricing-price">$—</div>
-          <div class="pricing-detail">~64 cu ft</div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-qty">Full Cord</div>
           <div class="pricing-desc">The standard firewood measurement — 4 ft × 4 ft × 8 ft. Best value for heavy home use.</div>
           <div class="pricing-price">$—</div>
-          <div class="pricing-detail">128 cu ft</div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-qty">2 Cords</div>
           <div class="pricing-desc">Two full cords for those who burn wood as a primary heat source or have a large property.</div>
           <div class="pricing-price">$—</div>
-          <div class="pricing-detail">256 cu ft</div>
         </div>
 
         <div class="pricing-card pricing-card--commercial">
           <div class="pricing-qty">Commercial / Bulk</div>
           <div class="pricing-desc">Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts. Kiln-dried available.</div>
           <div class="pricing-price">Call Us</div>
-          <div class="pricing-detail">Custom cuts available</div>
         </div>
 
       </div>
@@ -171,6 +165,27 @@
       <p class="footer-copy">&copy; 2026 The Firewood Company. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    fetch('./content/pricing.json')
+      .then(r => r.json())
+      .then(data => {
+        if (!data) return;
+        const introEl = document.querySelector('.page-hero p');
+        if (introEl && data.intro) introEl.textContent = data.intro;
+        if (!data.tiers) return;
+        const cards = document.querySelectorAll('.pricing-card');
+        data.tiers.forEach((tier, i) => {
+          const card = cards[i];
+          if (!card) return;
+          const priceEl = card.querySelector('.pricing-price');
+          if (priceEl) priceEl.textContent = tier.call_us ? 'Call Us' : (tier.price || '$—');
+          const descEl = card.querySelector('.pricing-desc');
+          if (descEl && tier.description) descEl.textContent = tier.description;
+        });
+      })
+      .catch(() => {});
+  </script>
 
 </body>
 </html>

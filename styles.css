@@ -518,11 +518,6 @@ footer p { margin-bottom: 6px; }
   font-family: Arial, sans-serif;
 }
 
-.pricing-detail {
-  font-size: 13px;
-  color: var(--text-muted);
-  font-family: Arial, sans-serif;
-}
 
 .pricing-disclaimer {
   font-size: 13px;

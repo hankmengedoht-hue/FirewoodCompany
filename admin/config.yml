@@ -1,0 +1,96 @@
+# ============================================================
+# Sveltia CMS — The Firewood Company
+# ============================================================
+# SETUP REQUIRED:
+#   1. Go to GitHub → Settings → Developer settings → OAuth Apps
+#   2. Click "New OAuth App"
+#   3. Set Homepage URL:     https://hankmengedoht-hue.github.io/FirewoodCompany
+#   4. Set Callback URL:     https://hankmengedoht-hue.github.io/FirewoodCompany/admin/
+#   5. Copy the Client ID and paste it below as app_id
+# ============================================================
+
+backend:
+  name: github
+  repo: hankmengedoht-hue/FirewoodCompany
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_GITHUB_OAUTH_CLIENT_ID
+
+site_url: https://hankmengedoht-hue.github.io/FirewoodCompany
+media_folder: uploads
+public_folder: /FirewoodCompany/uploads
+
+collections:
+
+  # ---- HOME PAGE ----
+  - name: home
+    label: "Home Page"
+    files:
+      - name: home_content
+        label: Home Page
+        file: content/home.json
+        format: json
+        fields:
+          - label: Hero — Eyebrow Text
+            name: hero_eyebrow
+            widget: string
+            hint: Small text above the main title (e.g. "Family-Owned Since 2015")
+
+          - label: Hero — Main Title
+            name: hero_title
+            widget: string
+            hint: The big headline on the homepage
+
+          - label: Hero — Subtitle
+            name: hero_subtitle
+            widget: text
+            hint: The paragraph below the main headline
+
+          - label: Hero — Background Image
+            name: hero_image
+            widget: image
+            required: false
+            hint: Optional photo behind the hero. If blank, the dark gradient is used.
+
+  # ---- PRICING PAGE ----
+  - name: pricing
+    label: "Pricing Page"
+    files:
+      - name: pricing_content
+        label: Pricing Page
+        file: content/pricing.json
+        format: json
+        fields:
+          - label: Page Introduction
+            name: intro
+            widget: text
+            hint: The sentence that appears above the pricing cards
+
+          - label: Pricing Tiers
+            name: tiers
+            widget: list
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - label: Tier Name
+                name: name
+                widget: string
+
+              - label: Description
+                name: description
+                widget: text
+
+              - label: Price (e.g. $150)
+                name: price
+                widget: string
+                required: false
+                hint: Leave blank to show "$—" as a placeholder
+
+              - label: Mark as "Most Popular"
+                name: featured
+                widget: boolean
+                default: false
+
+              - label: Show "Call Us" instead of a price
+                name: call_us
+                widget: boolean
+                default: false

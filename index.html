@@ -264,5 +264,26 @@
     </div>
   </footer>
 
+  <script>
+    fetch('./content/home.json')
+      .then(r => r.json())
+      .then(data => {
+        if (!data) return;
+        const set = (sel, val) => { const el = document.querySelector(sel); if (el && val) el.textContent = val; };
+        set('.hero-eyebrow', data.hero_eyebrow);
+        set('.hero h1', data.hero_title);
+        set('.hero-sub', data.hero_subtitle);
+        if (data.hero_image) {
+          const hero = document.querySelector('.hero');
+          if (hero) {
+            hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(${data.hero_image})`;
+            hero.style.backgroundSize = 'cover';
+            hero.style.backgroundPosition = 'center';
+          }
+        }
+      })
+      .catch(() => {});
+  </script>
+
 </body>
 </html>

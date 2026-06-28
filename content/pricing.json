@@ -1,0 +1,47 @@
+{
+  "intro": "All wood types — White Oak, Oak, Hickory, and Seasoned Hardwoods — are the same price. Price varies by quantity. Delivery and stacking included.",
+  "tiers": [
+    {
+      "name": "Bundle",
+      "description": "A small bundle — great for a single evening by the fire or trying us out for the first time.",
+      "price": "",
+      "featured": false,
+      "call_us": false
+    },
+    {
+      "name": "Face Cord",
+      "description": "One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.",
+      "price": "",
+      "featured": false,
+      "call_us": false
+    },
+    {
+      "name": "Half Cord",
+      "description": "Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.",
+      "price": "",
+      "featured": true,
+      "call_us": false
+    },
+    {
+      "name": "Full Cord",
+      "description": "The standard firewood measurement — 4 ft × 4 ft × 8 ft. Best value for heavy home use.",
+      "price": "",
+      "featured": false,
+      "call_us": false
+    },
+    {
+      "name": "2 Cords",
+      "description": "Two full cords for those who burn wood as a primary heat source or have a large property.",
+      "price": "",
+      "featured": false,
+      "call_us": false
+    },
+    {
+      "name": "Commercial / Bulk",
+      "description": "Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts. Kiln-dried available.",
+      "price": "Call Us",
+      "featured": false,
+      "call_us": true
+    }
+  ]
+}

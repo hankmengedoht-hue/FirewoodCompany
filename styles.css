@@ -448,6 +448,82 @@ footer p { margin-bottom: 6px; }
 .footer-links a:hover { color: var(--white); }
 .footer-copy { margin-top: 16px; opacity: 0.3; font-size: 12px; }
 
+/* --- Phone Modal --- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.52);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.modal-open { display: flex; }
+.modal {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px 32px 28px;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+}
+.modal-number {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.modal-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.modal-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Lato', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: block;
+}
+.modal-btn--call {
+  background: var(--brand);
+  color: var(--white);
+  border: 2px solid var(--brand);
+}
+.modal-btn--call:hover { background: var(--brand-dark); border-color: var(--brand-dark); text-decoration: none; }
+.modal-btn--text {
+  background: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
+.modal-btn--text:hover { background: var(--light); text-decoration: none; }
+.modal-dismiss {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'Lato', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+}
+.modal-dismiss:hover { color: var(--text); }
+
 /* --- Background Utilities --- */
 .bg-dark  { /* handled per section */ }
 .bg-light { background: var(--light-2); }

@@ -31,26 +31,48 @@ collections:
         file: content/home.json
         format: json
         fields:
-          - label: Hero — Eyebrow Text
+          - label: "Hero — Eyebrow Text"
             name: hero_eyebrow
             widget: string
             hint: Small text above the main title (e.g. "Family-Owned Since 2015")
 
-          - label: Hero — Main Title
+          - label: "Hero — Main Title"
             name: hero_title
             widget: string
-            hint: The big headline on the homepage
 
-          - label: Hero — Subtitle
+          - label: "Hero — Subtitle"
             name: hero_subtitle
             widget: text
-            hint: The paragraph below the main headline
 
-          - label: Hero — Background Image
+          - label: "Hero — Background Photo"
             name: hero_image
             widget: image
             required: false
-            hint: Optional photo behind the hero. If blank, the dark gradient is used.
+            hint: Full-width photo behind the hero text on the homepage
+
+          - label: "Our Story — Photo"
+            name: our_story_image
+            widget: image
+            required: false
+            hint: Photo in the Our Story section (left column)
+
+          - label: "Photo Banner 1 — Between Firewood & Who We Serve"
+            name: photo_banner_1
+            widget: image
+            required: false
+            hint: Full-width photo strip that appears between the Firewood and Who We Serve sections
+
+          - label: "Commercial Section — Photo"
+            name: commercial_image
+            widget: image
+            required: false
+            hint: Photo inside the Commercial customer block on the homepage
+
+          - label: "Photo Banner 2 — Between Who We Serve & Delivery"
+            name: photo_banner_2
+            widget: image
+            required: false
+            hint: Full-width photo strip that appears between the Who We Serve and Delivery sections
 
   # ---- PRICING PAGE ----
   - name: pricing
@@ -64,7 +86,7 @@ collections:
           - label: Page Introduction
             name: intro
             widget: text
-            hint: The sentence that appears above the pricing cards
+            hint: The sentence shown above the pricing cards
 
           - label: Pricing Tiers
             name: tiers
@@ -79,11 +101,17 @@ collections:
                 name: description
                 widget: text
 
-              - label: Price (e.g. $150)
+              - label: "Price (e.g. $150)"
                 name: price
                 widget: string
                 required: false
                 hint: Leave blank to show "$—" as a placeholder
+
+              - label: Card Photo
+                name: image
+                widget: image
+                required: false
+                hint: Photo shown at the top of this pricing card
 
               - label: Mark as "Most Popular"
                 name: featured

@@ -100,7 +100,7 @@
     <div class="container">
       <div class="story-grid">
         <div class="story-photo">
-          <img src="uploads/owners-horses.jpg" alt="The Firewood Company family" />
+          <img id="story-photo-img" src="uploads/owners-horses.jpg" alt="The Firewood Company family" />
         </div>
         <div class="story-text">
           <p class="hero-eyebrow">Family-Owned Since 2015</p>
@@ -142,7 +142,7 @@
   </section>
 
   <!-- PHOTO BANNER -->
-  <div class="photo-banner" style="background-image: url('uploads/pile-mountains.jpg');" role="img" aria-label="Large firewood pile with mountain backdrop"></div>
+  <div id="banner-1" class="photo-banner" style="background-image: url('uploads/pile-mountains.jpg');" role="img" aria-label="Large firewood pile with mountain backdrop"></div>
 
   <!-- RESIDENTIAL & COMMERCIAL -->
   <section class="section customers">
@@ -169,7 +169,7 @@
             <li>Five-star restaurants across Atlanta, North Georgia &amp; Western NC</li>
           </ul>
           <div class="customer-photo">
-            <img src="uploads/commercial-restaurant.jpg" alt="Commercial restaurant using our firewood" />
+            <img id="commercial-photo-img" src="uploads/commercial-restaurant.jpg" alt="Commercial restaurant using our firewood" />
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@
   </section>
 
   <!-- PHOTO BANNER -->
-  <div class="photo-banner" style="background-image: url('uploads/firewood-processor.jpg');" role="img" aria-label="Firewood processing and delivery operation"></div>
+  <div id="banner-2" class="photo-banner" style="background-image: url('uploads/firewood-processor.jpg');" role="img" aria-label="Firewood processing and delivery operation"></div>
 
   <!-- DELIVERY AREA -->
   <section id="delivery" class="section delivery bg-light">
@@ -329,6 +329,22 @@
             hero.style.backgroundSize = 'cover';
             hero.style.backgroundPosition = 'center';
           }
+        }
+        if (data.our_story_image) {
+          const img = document.getElementById('story-photo-img');
+          if (img) img.src = data.our_story_image;
+        }
+        if (data.photo_banner_1) {
+          const b1 = document.getElementById('banner-1');
+          if (b1) b1.style.backgroundImage = `url(${data.photo_banner_1})`;
+        }
+        if (data.commercial_image) {
+          const img = document.getElementById('commercial-photo-img');
+          if (img) img.src = data.commercial_image;
+        }
+        if (data.photo_banner_2) {
+          const b2 = document.getElementById('banner-2');
+          if (b2) b2.style.backgroundImage = `url(${data.photo_banner_2})`;
         }
       })
       .catch(() => {});

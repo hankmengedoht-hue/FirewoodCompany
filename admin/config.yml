@@ -108,7 +108,7 @@ collections:
                 name: price
                 widget: string
                 required: false
-                hint: Leave blank to show "Call for Price" as a placeholder
+                hint: Leave blank to show no price
 
               - label: Card Photo
                 name: image
@@ -121,7 +121,7 @@ collections:
                 widget: boolean
                 default: false
 
-              - label: Show "Call Us" instead of a price
+              - label: Show "Inquire" instead of a price
                 name: call_us
                 widget: boolean
                 default: false

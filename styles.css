@@ -270,48 +270,50 @@ nav a:hover { color: var(--white); text-decoration: none; }
 
 /* --- Grids --- */
 .grid { display: grid; gap: var(--space-4); }
-.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
-/* --- Why Cards --- */
-.card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--brand);
-  border-radius: var(--radius);
-  padding: var(--space-5) var(--space-4);
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* --- Editorial Item Lists (Why Choose Us, Our Firewood, species) --- */
+.edit-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-7);
+  border-bottom: 1px solid var(--border);
 }
-.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-.card h3 {
+.edit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--border);
+}
+.edit-num {
+  flex: 0 0 auto;
+  min-width: 56px;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(177,84,31,0.3);
+}
+.edit-item-body h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: var(--space-2);
   color: var(--text);
 }
-.card p { color: var(--text-muted); font-size: 15px; line-height: 1.75; }
+.edit-item-body p { color: var(--text-muted); font-size: 15px; line-height: 1.75; }
+
+.edit-list--dark { border-bottom-color: rgba(255,255,255,0.12); }
+.edit-list--dark .edit-item { border-top-color: rgba(255,255,255,0.12); }
+.edit-list--dark .edit-num { color: rgba(226,168,116,0.4); }
+.edit-list--dark .edit-item-body h3 { color: var(--brand-light); }
+.edit-list--dark .edit-item-body p { color: rgba(255,255,255,0.62); }
+
+.edit-list--forest .edit-num { color: rgba(63,90,58,0.32); }
+.edit-list--forest .edit-item-body h3 { color: var(--forest); }
 
 /* --- Firewood Section --- */
 .firewood.bg-dark { background: var(--dark); }
-.wood-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.09);
-  border-top: 2px solid var(--brand-light);
-  border-radius: var(--radius);
-  padding: var(--space-5) var(--space-4);
-  color: var(--white);
-  transition: background 0.2s ease;
-}
-.wood-card:hover { background: rgba(255,255,255,0.07); }
-.wood-card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: var(--space-2);
-  color: var(--brand-light);
-}
-.wood-card p { font-size: 15px; color: rgba(255,255,255,0.62); line-height: 1.75; }
 .kiln-banner {
   margin-top: var(--space-6);
   background: var(--brand);
@@ -326,21 +328,24 @@ nav a:hover { color: var(--white); text-decoration: none; }
 
 /* --- Customers --- */
 .customers { background: var(--light); }
-.customer-block {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: var(--space-5);
-  box-shadow: var(--shadow);
-  border-left: 3px solid var(--brand);
+.edit-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
 }
-.customer-block h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: var(--space-3); }
-.customer-block ul li {
+.edit-col .edit-num { display: block; margin-bottom: var(--space-2); }
+.edit-col h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: var(--space-3); }
+.edit-col ul li {
   padding: var(--space-2) 0;
   border-bottom: 1px solid var(--light-2);
   font-size: 15px;
   color: var(--text-muted);
 }
-.customer-block ul li:last-child { border-bottom: none; }
+.edit-col ul li:last-child { border-bottom: none; }
+.edit-col + .edit-col {
+  border-left: 1px solid var(--border);
+  padding-left: var(--space-7);
+}
 
 /* --- Delivery --- */
 .delivery-areas {
@@ -720,21 +725,7 @@ footer p { margin-bottom: 6px; }
 .pricing-disclaimer a { color: var(--brand-dark); }
 
 /* --- Species Section --- */
-.species-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-4);
-}
-.species-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--forest);
-  border-radius: var(--radius);
-  padding: var(--space-4);
-  box-shadow: var(--shadow);
-}
-.species-card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: var(--space-2); color: var(--forest); }
-.species-card p { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+/* uses .edit-list / .edit-list--forest, see Editorial Item Lists above */
 
 /* --- Our Story --- */
 .our-story { background: var(--white); }
@@ -843,6 +834,17 @@ footer p { margin-bottom: 6px; }
   .nav-active { border-bottom: 1px solid rgba(255,255,255,0.06) !important; }
   header { position: sticky; top: 0; }
   .header-inner { position: relative; }
+
+  .edit-list { grid-template-columns: 1fr; }
+  .edit-num { font-size: 2.1rem; min-width: 48px; }
+  .edit-cols { grid-template-columns: 1fr; gap: 0; }
+  .edit-col + .edit-col {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: var(--space-6);
+    margin-top: var(--space-5);
+  }
 }
 
 @media (max-width: 640px) {

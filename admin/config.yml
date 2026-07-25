@@ -1,5 +1,5 @@
 # ============================================================
-# Sveltia CMS — The Firewood Company
+# Sveltia CMS: The Firewood Company
 # ============================================================
 # SETUP REQUIRED (auth via sveltia-cms-auth on Cloudflare Workers):
 #   1. Deploy https://github.com/sveltia/sveltia-cms-auth to Cloudflare
@@ -34,44 +34,44 @@ collections:
         file: content/home.json
         format: json
         fields:
-          - label: "Hero — Eyebrow Text"
+          - label: "Hero: Eyebrow Text"
             name: hero_eyebrow
             widget: string
             hint: Small text above the main title (e.g. "Family-Owned Since 2015")
 
-          - label: "Hero — Main Title"
+          - label: "Hero: Main Title"
             name: hero_title
             widget: string
 
-          - label: "Hero — Subtitle"
+          - label: "Hero: Subtitle"
             name: hero_subtitle
             widget: text
 
-          - label: "Hero — Background Photo"
+          - label: "Hero: Background Photo"
             name: hero_image
             widget: image
             required: false
             hint: Full-width photo behind the hero text on the homepage
 
-          - label: "Our Story — Photo"
+          - label: "Our Story: Photo"
             name: our_story_image
             widget: image
             required: false
             hint: Photo in the Our Story section (left column)
 
-          - label: "Photo Banner 1 — Between Firewood & Who We Serve"
+          - label: "Photo Banner 1: Between Firewood & Who We Serve"
             name: photo_banner_1
             widget: image
             required: false
             hint: Full-width photo strip that appears between the Firewood and Who We Serve sections
 
-          - label: "Commercial Section — Photo"
+          - label: "Commercial Section: Photo"
             name: commercial_image
             widget: image
             required: false
             hint: Photo inside the Commercial customer block on the homepage
 
-          - label: "Photo Banner 2 — Between Who We Serve & Delivery"
+          - label: "Photo Banner 2: Between Who We Serve & Delivery"
             name: photo_banner_2
             widget: image
             required: false
@@ -94,7 +94,7 @@ collections:
           - label: Pricing Tiers
             name: tiers
             widget: list
-            summary: "{{fields.name}} — {{fields.price}}"
+            summary: "{{fields.name}}: {{fields.price}}"
             fields:
               - label: Tier Name
                 name: name
@@ -108,7 +108,7 @@ collections:
                 name: price
                 widget: string
                 required: false
-                hint: Leave blank to show "$—" as a placeholder
+                hint: Leave blank to show "Call for Price" as a placeholder
 
               - label: Card Photo
                 name: image

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Firewood pricing from The Firewood Company — face cords, half cords, and full cords delivered and stacked in Atlanta, North Georgia, and Western North Carolina." />
+  <meta name="description" content="Firewood pricing from The Firewood Company: face cords, half cords, and full cords delivered and stacked in Atlanta, North Georgia, and Western North Carolina." />
   <title>Pricing | The Firewood Company</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Karla:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -53,7 +53,7 @@
   <section class="page-hero">
     <div class="container">
       <h1>Firewood Pricing</h1>
-      <p>All wood types — White Oak, Oak, Hickory, and Seasoned Hardwoods — are the same price. Price varies by quantity. Delivery and stacking included.</p>
+      <p>All wood types (White Oak, Oak, Hickory, and Seasoned Hardwoods) are the same price. Price varies by quantity. Delivery and stacking included.</p>
     </div>
   </section>
 
@@ -62,7 +62,7 @@
     <div class="container">
 
       <div class="pricing-note">
-        <strong>All prices include delivery and stacking.</strong> Wood is cut to standard 16–18 inch lengths unless otherwise specified. Commercial cuts and kiln-dried options available — call for details.
+        <strong>All prices include delivery and stacking.</strong> Wood is cut to standard 16–18 inch lengths unless otherwise specified. Commercial cuts and kiln-dried options are available. Call for details.
       </div>
 
       <div class="pricing-grid">
@@ -71,7 +71,7 @@
           <div class="pricing-card-photo" style="background-image: url('uploads/delivery-patio.jpg');"></div>
           <h3 class="pricing-qty">Face Cord</h3>
           <div class="pricing-desc">One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.</div>
-          <div class="pricing-price">$—</div>
+          <div class="pricing-price">Call for Price</div>
         </div>
 
         <div class="pricing-card pricing-card--featured">
@@ -79,21 +79,21 @@
           <div class="pricing-badge">Most Popular</div>
           <h3 class="pricing-qty">Half Cord</h3>
           <div class="pricing-desc">Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.</div>
-          <div class="pricing-price">$—</div>
+          <div class="pricing-price">Call for Price</div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-card-photo" style="background-image: url('uploads/stacked-full.jpg');"></div>
           <h3 class="pricing-qty">Full Cord</h3>
-          <div class="pricing-desc">The standard firewood measurement — 4 ft × 4 ft × 8 ft. Best value for heavy home use.</div>
-          <div class="pricing-price">$—</div>
+          <div class="pricing-desc">The standard firewood measurement: 4 ft × 4 ft × 8 ft. Best value for heavy home use.</div>
+          <div class="pricing-price">Call for Price</div>
         </div>
 
         <div class="pricing-card">
           <div class="pricing-card-photo" style="background-image: url('uploads/storage-barn.jpg');"></div>
           <h3 class="pricing-qty">2 Cords</h3>
           <div class="pricing-desc">Two full cords for those who burn wood as a primary heat source or have a large property.</div>
-          <div class="pricing-price">$—</div>
+          <div class="pricing-price">Call for Price</div>
         </div>
 
         <div class="pricing-card pricing-card--commercial">
@@ -116,7 +116,7 @@
   <section class="section species-section bg-light">
     <div class="container">
       <h2 class="section-title">Same Price, Your Choice of Wood</h2>
-      <p class="section-sub">All quantities are available in any of our species — priced the same so you can choose what burns best for you.</p>
+      <p class="section-sub">All quantities are available in any of our species, priced the same so you can choose what burns best for you.</p>
       <div class="species-grid">
         <div class="species-card">
           <h3>White Oak</h3>
@@ -211,7 +211,7 @@
           const card = cards[i];
           if (!card) return;
           const priceEl = card.querySelector('.pricing-price');
-          if (priceEl) priceEl.textContent = tier.call_us ? 'Call Us' : (tier.price || '$—');
+          if (priceEl) priceEl.textContent = tier.call_us ? 'Call Us' : (tier.price || 'Call for Price');
           const descEl = card.querySelector('.pricing-desc');
           if (descEl && tier.description) descEl.textContent = tier.description;
           if (tier.image) {

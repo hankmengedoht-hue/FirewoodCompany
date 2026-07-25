@@ -1,5 +1,5 @@
 {
-  "intro": "All wood types — White Oak, Oak, Hickory, and Seasoned Hardwoods — are the same price. Price varies by quantity. Delivery and stacking included.",
+  "intro": "All wood types (White Oak, Oak, Hickory, and Seasoned Hardwoods) are the same price. Price varies by quantity. Delivery and stacking included.",
   "tiers": [
     {
       "name": "Face Cord",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Full Cord",
-      "description": "The standard firewood measurement — 4 ft × 4 ft × 8 ft. Best value for heavy home use.",
+      "description": "The standard firewood measurement: 4 ft × 4 ft × 8 ft. Best value for heavy home use.",
       "price": "",
       "image": "",
       "featured": false,

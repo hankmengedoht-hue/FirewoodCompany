@@ -20,6 +20,9 @@
   --white:       #fdfcf8;
   --radius:      8px;
   --shadow:      0 4px 20px rgba(0,0,0,0.07);
+  --container-max: 1100px;
+  --section-py:    88px;
+  --section-py-sm: 64px;
 }
 
 html { scroll-behavior: smooth; }
@@ -45,7 +48,7 @@ ul { list-style: none; }
 
 /* --- Container --- */
 .container {
-  max-width: 1100px;
+  max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -210,7 +213,7 @@ nav a:hover { color: var(--white); text-decoration: none; }
 }
 
 /* --- Section Base --- */
-.section { padding: 88px 0; }
+.section { padding: var(--section-py) 0; }
 .section-title {
   font-size: clamp(26px, 4vw, 36px);
   text-align: center;
@@ -740,7 +743,7 @@ footer p { margin-bottom: 6px; }
 
 @media (max-width: 640px) {
   .hero { padding: 72px 0 64px; }
-  .section { padding: 64px 0; }
+  .section { padding: var(--section-py-sm) 0; }
   .contact-details { flex-direction: column; align-items: center; }
   .pricing-desc { min-height: unset; }
   .story-grid { grid-template-columns: 1fr; gap: 32px; }

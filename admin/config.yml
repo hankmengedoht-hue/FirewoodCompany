@@ -1,20 +1,23 @@
 # ============================================================
 # Sveltia CMS — The Firewood Company
 # ============================================================
-# SETUP REQUIRED:
-#   1. Go to GitHub → Settings → Developer settings → OAuth Apps
-#   2. Click "New OAuth App"
-#   3. Set Homepage URL:     https://hankmengedoht-hue.github.io/FirewoodCompany
-#   4. Set Callback URL:     https://hankmengedoht-hue.github.io/FirewoodCompany/admin/
-#   5. Copy the Client ID and paste it below as app_id
+# SETUP REQUIRED (auth via sveltia-cms-auth on Cloudflare Workers):
+#   1. Deploy https://github.com/sveltia/sveltia-cms-auth to Cloudflare
+#      Workers and note the resulting worker URL.
+#   2. Create a GitHub OAuth App (github.com/settings/applications/new):
+#        Homepage URL:            https://hankmengedoht-hue.github.io/FirewoodCompany
+#        Authorization callback:  <your-worker-url>/callback
+#   3. In the Cloudflare Worker's env vars, set GITHUB_CLIENT_ID and
+#      GITHUB_CLIENT_SECRET (encrypted) from the OAuth App. Never put
+#      the client secret in this repo.
+#   4. Replace base_url below with your worker URL.
 # ============================================================
 
 backend:
   name: github
   repo: hankmengedoht-hue/FirewoodCompany
   branch: main
-  auth_type: pkce
-  app_id: REPLACE_WITH_GITHUB_OAUTH_CLIENT_ID
+  base_url: https://sveltia-cms-auth.hankmengedoht.workers.dev
 
 site_url: https://hankmengedoht-hue.github.io/FirewoodCompany
 media_folder: uploads

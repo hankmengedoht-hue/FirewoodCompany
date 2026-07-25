@@ -2,14 +2,6 @@
   "intro": "All wood types — White Oak, Oak, Hickory, and Seasoned Hardwoods — are the same price. Price varies by quantity. Delivery and stacking included.",
   "tiers": [
     {
-      "name": "Bundle",
-      "description": "A small bundle — great for a single evening by the fire or trying us out for the first time.",
-      "price": "",
-      "image": "",
-      "featured": false,
-      "call_us": false
-    },
-    {
       "name": "Face Cord",
       "description": "One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.",
       "price": "",

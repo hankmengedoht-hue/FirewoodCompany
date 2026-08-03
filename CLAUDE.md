@@ -115,17 +115,18 @@ Typical commercial wood:
 
 ---
 
-# Suggested Homepage Structure
+# Homepage Structure
 
 1. Hero
-2. Why Choose Us
+2. Delivery Area
 3. Firewood Types
-4. Residential & Commercial
-5. Delivery Area
-6. Testimonials
-7. FAQ
-8. Contact CTA
-9. Footer
+4. Testimonials
+5. Why Choose Us
+6. Our Story
+7. Residential & Commercial
+8. FAQ
+9. Contact CTA
+10. Footer
 
 ---
 

@@ -59,11 +59,11 @@ collections:
             required: false
             hint: Photo in the Our Story section (left column)
 
-          - label: "Photo Banner 1: Between Firewood & Who We Serve"
+          - label: "Photo Banner 1: Between Our Story & Who We Serve"
             name: photo_banner_1
             widget: image
             required: false
-            hint: Full-width photo strip that appears between the Firewood and Who We Serve sections
+            hint: Full-width photo strip that appears between the Our Story and Who We Serve sections
 
           - label: "Commercial Section: Photo"
             name: commercial_image
@@ -71,11 +71,11 @@ collections:
             required: false
             hint: Photo inside the Commercial customer block on the homepage
 
-          - label: "Photo Banner 2: Between Who We Serve & Delivery"
+          - label: "Photo Banner 2: Between Who We Serve & FAQ"
             name: photo_banner_2
             widget: image
             required: false
-            hint: Full-width photo strip that appears between the Who We Serve and Delivery sections
+            hint: Full-width photo strip that appears between the Who We Serve and FAQ sections
 
   # ---- PRICING PAGE ----
   - name: pricing

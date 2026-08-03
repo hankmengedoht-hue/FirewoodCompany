@@ -314,17 +314,6 @@ nav a:hover { color: var(--white); text-decoration: none; }
 
 /* --- Firewood Section --- */
 .firewood.bg-dark { background: var(--dark); }
-.kiln-banner {
-  margin-top: var(--space-6);
-  background: var(--brand);
-  color: var(--white);
-  text-align: center;
-  padding: var(--space-4) var(--space-5);
-  border-radius: var(--radius);
-  font-size: 15px;
-  line-height: 1.65;
-  box-shadow: 0 6px 18px rgba(177,84,31,0.3);
-}
 
 /* --- Customers --- */
 .customers { background: var(--light); }

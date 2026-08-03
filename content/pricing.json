@@ -12,7 +12,7 @@
     {
       "name": "Face Cord",
       "description": "One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.",
-      "price": "$325",
+      "price": "$300",
       "image": "",
       "featured": false,
       "call_us": false
@@ -20,7 +20,7 @@
     {
       "name": "Half Cord",
       "description": "Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.",
-      "price": "",
+      "price": "$475",
       "image": "",
       "featured": true,
       "call_us": false
@@ -28,14 +28,14 @@
     {
       "name": "Full Cord",
       "description": "The standard firewood measurement: 4 ft × 4 ft × 8 ft. Best value for heavy home use.",
-      "price": "",
+      "price": "$700",
       "image": "",
       "featured": false,
       "call_us": false
     },
     {
       "name": "Commercial / Bulk",
-      "description": "Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts. Kiln-dried available.",
+      "description": "Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts.",
       "price": "",
       "image": "",
       "featured": false,

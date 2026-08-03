@@ -23,8 +23,6 @@ Deliver premium firewood that is properly seasoned, cut correctly, delivered on 
 - Hickory
 - Seasoned Hardwoods
 
-Commercial customers may also request kiln-dried wood for cooking applications.
-
 ---
 
 # Customers
@@ -68,7 +66,6 @@ Delivery available across much of the Southeastern United States.
 
 - Premium hardwoods
 - Properly seasoned firewood
-- Kiln-dried options available
 - Reliable delivery
 - Firewood neatly stacked upon delivery
 - Friendly service
@@ -108,9 +105,6 @@ Typical commercial wood:
 ## Matt H
 "I am the general manager of a popular BBQ restaurant in Atlanta. The Firewood Company always provides the perfect cut, the perfect price, and dependable service."
 
-## Ben L
-"You simply can't find better kiln-dried firewood or customer service. One call, that's all."
-
 ---
 
 # Contact
@@ -138,7 +132,7 @@ Typical commercial wood:
 # Suggested FAQ
 
 **Is your firewood seasoned?**
-Yes. We supply properly seasoned hardwoods, with kiln-dried options available for many commercial applications.
+Yes. We supply properly seasoned hardwoods, ready to burn.
 
 **Do you deliver?**
 Yes. Delivery is available throughout our service area.
@@ -158,7 +152,6 @@ Yes. We proudly serve restaurants, pizza ovens, BBQ restaurants, and other comme
 
 - firewood delivery
 - seasoned firewood
-- kiln dried firewood
 - oak firewood
 - hickory firewood
 - restaurant firewood

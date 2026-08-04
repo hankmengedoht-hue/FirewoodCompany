@@ -93,6 +93,7 @@ summary:focus-visible {
 .mobile-call-bar { display: none; }
 
 a[href="tel:8282003050"] { white-space: nowrap; }
+.nowrap { white-space: nowrap; }
 
 /* --- Container --- */
 .container {

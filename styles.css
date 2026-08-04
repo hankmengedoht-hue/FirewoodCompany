@@ -674,7 +674,7 @@ footer p { margin-bottom: 6px; }
   letter-spacing: 1.5px;
   padding: 4px 12px;
   border-radius: 3px;
-  margin-bottom: var(--space-3);
+  margin-top: var(--space-4);
   font-family: 'Karla', Arial, sans-serif;
 }
 .pricing-qty {

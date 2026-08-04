@@ -303,17 +303,8 @@ nav a:hover { color: var(--white); text-decoration: none; }
 }
 .edit-item-body p { color: var(--text-muted); font-size: 15px; line-height: 1.75; }
 
-.edit-list--dark { border-bottom-color: rgba(255,255,255,0.12); }
-.edit-list--dark .edit-item { border-top-color: rgba(255,255,255,0.12); }
-.edit-list--dark .edit-num { color: rgba(226,168,116,0.4); }
-.edit-list--dark .edit-item-body h3 { color: var(--brand-light); }
-.edit-list--dark .edit-item-body p { color: rgba(255,255,255,0.62); }
-
 .edit-list--forest .edit-num { color: rgba(63,90,58,0.32); }
 .edit-list--forest .edit-item-body h3 { color: var(--forest); }
-
-/* --- Firewood Section --- */
-.firewood.bg-dark { background: var(--dark); }
 
 /* --- Customers --- */
 .customers { background: var(--light); }

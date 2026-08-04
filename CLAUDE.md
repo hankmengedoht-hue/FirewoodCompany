@@ -118,8 +118,8 @@ Typical commercial wood:
 # Homepage Structure
 
 1. Hero
-2. Delivery Area
-3. Firewood Types
+2. Pricing
+3. Delivery Area
 4. Testimonials
 5. Why Choose Us
 6. Our Story

@@ -234,6 +234,33 @@ nav a:hover { color: var(--white); text-decoration: none; }
   font-weight: 700;
   color: var(--white);
 }
+.hero-contact {
+  display: flex;
+  gap: var(--space-5);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+.hero-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+  font-family: 'Karla', Arial, sans-serif;
+  letter-spacing: 0.2px;
+  transition: color 0.18s ease;
+}
+.hero-contact-item svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: var(--brand-light);
+}
+.hero-contact-item:hover {
+  color: var(--white);
+  text-decoration: none;
+}
 .hero-sub {
   font-size: 18px;
   color: rgba(255,255,255,0.66);

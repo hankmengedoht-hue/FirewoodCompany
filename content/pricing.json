@@ -5,7 +5,7 @@
       "name": "Quarter Cord",
       "description": "Our smallest stacked delivery. Great for occasional fires or trying us out for the first time.",
       "price": "$175",
-      "image": "/FirewoodCompany/uploads/7601928896996497657.jpeg",
+      "image": "/FirewoodCompany/uploads/quarter-cord-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -13,7 +13,7 @@
       "name": "Face Cord",
       "description": "One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.",
       "price": "$300",
-      "image": "/FirewoodCompany/uploads/6477792853266757852.jpeg",
+      "image": "/FirewoodCompany/uploads/face-cord-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -37,7 +37,7 @@
       "name": "Commercial / Bulk",
       "description": "Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts.",
       "price": "",
-      "image": "/FirewoodCompany/uploads/IMG_1917.jpeg",
+      "image": "/FirewoodCompany/uploads/commercial-bulk-firewood.webp",
       "featured": false,
       "call_us": true
     }

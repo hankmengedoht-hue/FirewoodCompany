@@ -753,22 +753,6 @@ footer p { margin-bottom: 6px; }
   border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
 }
 
-/* --- Customer Commercial Photo --- */
-.customer-photo {
-  margin-top: var(--space-4);
-  background: var(--white);
-  padding: var(--space-2);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--light-2);
-}
-.customer-photo img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  border-radius: calc(var(--radius-lg) - 6px);
-}
-
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hamburger { display: flex; }

@@ -284,9 +284,6 @@
             <li>Hospitality industry</li>
             <li>Five-star restaurants across Atlanta, North Georgia &amp; Western NC</li>
           </ul>
-          <div class="customer-photo">
-            <img id="commercial-photo-img" src="uploads/commercial-restaurant.jpg" alt="Commercial restaurant using our firewood" loading="lazy" />
-          </div>
         </div>
       </div>
     </div>
@@ -409,10 +406,6 @@
         if (data.our_story_image) {
           const img = document.getElementById('story-photo-img');
           if (img) img.src = data.our_story_image;
-        }
-        if (data.commercial_image) {
-          const img = document.getElementById('commercial-photo-img');
-          if (img) img.src = data.commercial_image;
         }
       })
       .catch(() => {});

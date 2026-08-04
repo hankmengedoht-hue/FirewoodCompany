@@ -59,12 +59,6 @@ collections:
             required: false
             hint: Photo in the Our Story section (left column)
 
-          - label: "Commercial Section: Photo"
-            name: commercial_image
-            widget: image
-            required: false
-            hint: Photo inside the Commercial customer block on the homepage
-
   # ---- PRICING PAGE ----
   - name: pricing
     label: "Pricing Page"

@@ -407,7 +407,7 @@ nav a:hover { color: var(--white); text-decoration: none; }
 }
 
 /* --- FAQ --- */
-.faq { background: var(--light); }
+.faq { background: var(--white); }
 .faq-list { max-width: 760px; margin: 0 auto; }
 .faq-item {
   background: var(--white);
@@ -717,7 +717,7 @@ footer p { margin-bottom: 6px; }
   align-items: center;
 }
 .story-photo {
-  background: var(--white);
+  background: var(--light);
   padding: var(--space-2);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
@@ -742,20 +742,6 @@ footer p { margin-bottom: 6px; }
   font-size: 16px;
   line-height: 1.85;
   margin-bottom: var(--space-3);
-}
-
-/* --- Photo Banners --- */
-.photo-banner {
-  position: relative;
-  height: 280px;
-  background-size: cover;
-  background-position: center;
-}
-.photo-banner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(38,33,29,0.05), rgba(38,33,29,0.3));
 }
 
 /* --- Pricing Card Photos --- */
@@ -835,5 +821,4 @@ footer p { margin-bottom: 6px; }
   .pricing-desc { min-height: unset; }
   .story-grid { grid-template-columns: 1fr; gap: var(--space-5); }
   .story-photo img { height: 260px; }
-  .photo-banner { height: 200px; }
 }

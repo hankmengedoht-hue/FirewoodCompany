@@ -258,9 +258,6 @@
     </div>
   </section>
 
-  <!-- PHOTO BANNER -->
-  <div id="banner-1" class="photo-banner" style="background-image: url('uploads/pile-mountains.jpg');" role="img" aria-label="Large firewood pile with mountain backdrop"></div>
-
   <!-- RESIDENTIAL & COMMERCIAL -->
   <section class="section customers">
     <div class="container">
@@ -294,9 +291,6 @@
       </div>
     </div>
   </section>
-
-  <!-- PHOTO BANNER -->
-  <div id="banner-2" class="photo-banner" style="background-image: url('uploads/firewood-processor.jpg');" role="img" aria-label="Firewood processing and delivery operation"></div>
 
   <!-- FAQ -->
   <section class="section faq">
@@ -416,17 +410,9 @@
           const img = document.getElementById('story-photo-img');
           if (img) img.src = data.our_story_image;
         }
-        if (data.photo_banner_1) {
-          const b1 = document.getElementById('banner-1');
-          if (b1) b1.style.backgroundImage = `url(${data.photo_banner_1})`;
-        }
         if (data.commercial_image) {
           const img = document.getElementById('commercial-photo-img');
           if (img) img.src = data.commercial_image;
-        }
-        if (data.photo_banner_2) {
-          const b2 = document.getElementById('banner-2');
-          if (b2) b2.style.backgroundImage = `url(${data.photo_banner_2})`;
         }
       })
       .catch(() => {});

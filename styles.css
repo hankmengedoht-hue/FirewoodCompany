@@ -92,6 +92,8 @@ summary:focus-visible {
 
 .mobile-call-bar { display: none; }
 
+a[href="tel:8282003050"] { white-space: nowrap; }
+
 /* --- Container --- */
 .container {
   max-width: var(--container-max);
@@ -600,6 +602,7 @@ footer p { margin-bottom: 6px; }
   font-weight: 700;
   color: var(--text);
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 .modal-sub {
   font-size: 14px;

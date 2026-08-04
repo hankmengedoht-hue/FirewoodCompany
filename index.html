@@ -407,7 +407,8 @@
         if (!data) return;
         const set = (sel, val) => { const el = document.querySelector(sel); if (el && val) el.textContent = val; };
         set('.hero-eyebrow', data.hero_eyebrow);
-        set('.hero h1', data.hero_title);
+        const h1 = document.querySelector('.hero h1');
+        if (h1 && data.hero_title) h1.innerHTML = data.hero_title.replace(/\.\s+/, '.<br />');
         set('.hero-sub', data.hero_subtitle);
         if (data.hero_image) {
           const hero = document.querySelector('.hero');

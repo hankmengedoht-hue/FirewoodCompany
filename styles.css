@@ -637,6 +637,7 @@ footer p { margin-bottom: 6px; }
 
 /* --- Pricing --- */
 .pricing-section { background: var(--white); }
+.pricing-species { margin-top: var(--space-8); }
 .pricing-note {
   background: var(--light);
   border-left: 3px solid var(--brand);

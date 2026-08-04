@@ -26,7 +26,7 @@
       </button>
       <nav id="main-nav">
         <a href="index.html" class="nav-active">Home</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="index.html#pricing">Pricing</a>
         <a href="index.html#delivery">Delivery</a>
         <a href="index.html#firewood">Firewood</a>
         <a href="index.html#testimonials">Reviews</a>
@@ -60,6 +60,97 @@
       <div class="hero-cta">
         <a href="#contact" class="btn btn-primary">Get a Quote</a>
         <a href="#firewood" class="btn btn-secondary">See Our Wood</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing-section">
+    <div class="container">
+      <h2 class="section-title">Firewood Pricing</h2>
+      <p class="section-sub">All wood types (White Oak, Oak, Hickory, and Seasoned Hardwoods) are the same price. Price varies by quantity. Delivery and stacking included.</p>
+
+      <div class="pricing-note">
+        <strong>All prices include delivery and stacking.</strong> Wood is cut to standard 16–18 inch lengths unless otherwise specified. Commercial cuts are available. Call for details.
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-card-photo" style="background-image: url('uploads/stacked-home.jpg');"></div>
+          <h3 class="pricing-qty">Quarter Cord</h3>
+          <div class="pricing-desc">Our smallest stacked delivery. Great for occasional fires or trying us out for the first time.</div>
+          <div class="pricing-price">$175</div>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card-photo" style="background-image: url('uploads/delivery-patio.jpg');"></div>
+          <h3 class="pricing-qty">Face Cord</h3>
+          <div class="pricing-desc">One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.</div>
+          <div class="pricing-price">$300</div>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card-photo" style="background-image: url('uploads/stacked-stone.jpg');"></div>
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-qty">Half Cord</h3>
+          <div class="pricing-desc">Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.</div>
+          <div class="pricing-price">$475</div>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card-photo" style="background-image: url('uploads/stacked-full.jpg');"></div>
+          <h3 class="pricing-qty">Full Cord</h3>
+          <div class="pricing-desc">The standard firewood measurement: 4 ft × 4 ft × 8 ft. Best value for heavy home use.</div>
+          <div class="pricing-price">$700</div>
+        </div>
+
+        <div class="pricing-card pricing-card--commercial">
+          <div class="pricing-card-photo" style="background-image: url('uploads/commercial-restaurant.jpg');"></div>
+          <h3 class="pricing-qty">Commercial / Bulk</h3>
+          <div class="pricing-desc">Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts.</div>
+          <div class="pricing-price">Inquire</div>
+        </div>
+
+      </div>
+
+      <div class="pricing-disclaimer">
+        * Prices subject to change. Delivery surcharges may apply for locations outside our primary service area. Call <a href="tel:8282003050">828-200-3050</a> to confirm pricing for your area.
+      </div>
+    </div>
+
+    <div class="container pricing-species">
+      <h3 class="section-title">Same Price, Your Choice of Wood</h3>
+      <p class="section-sub">All quantities are available in any of our species, priced the same so you can choose what burns best for you.</p>
+      <div class="edit-list edit-list--forest">
+        <div class="edit-item">
+          <span class="edit-num">01</span>
+          <div class="edit-item-body">
+            <h3>White Oak</h3>
+            <p>Dense and long-burning. Low smoke, steady heat. Excellent for fireplaces and wood stoves.</p>
+          </div>
+        </div>
+        <div class="edit-item">
+          <span class="edit-num">02</span>
+          <div class="edit-item-body">
+            <h3>Oak</h3>
+            <p>Reliable heat output and clean burn. Great all-around choice for residential and commercial use.</p>
+          </div>
+        </div>
+        <div class="edit-item">
+          <span class="edit-num">03</span>
+          <div class="edit-item-body">
+            <h3>Hickory</h3>
+            <p>Bold aroma and intense heat. The go-to for BBQ pits, smokers, and cooking fires.</p>
+          </div>
+        </div>
+        <div class="edit-item">
+          <span class="edit-num">04</span>
+          <div class="edit-item-body">
+            <h3>Seasoned Hardwoods</h3>
+            <p>Properly dried mixed hardwoods. Great value for high-volume or everyday burning needs.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -376,6 +467,31 @@
           const b2 = document.getElementById('banner-2');
           if (b2) b2.style.backgroundImage = `url(${data.photo_banner_2})`;
         }
+      })
+      .catch(() => {});
+  </script>
+
+  <script>
+    fetch('./content/pricing.json')
+      .then(r => r.json())
+      .then(data => {
+        if (!data) return;
+        const introEl = document.querySelector('#pricing .section-sub');
+        if (introEl && data.intro) introEl.textContent = data.intro;
+        if (!data.tiers) return;
+        const cards = document.querySelectorAll('#pricing .pricing-card');
+        data.tiers.forEach((tier, i) => {
+          const card = cards[i];
+          if (!card) return;
+          const priceEl = card.querySelector('.pricing-price');
+          if (priceEl) priceEl.textContent = tier.call_us ? 'Inquire' : (tier.price || '');
+          const descEl = card.querySelector('.pricing-desc');
+          if (descEl && tier.description) descEl.textContent = tier.description;
+          if (tier.image) {
+            const photoEl = card.querySelector('.pricing-card-photo');
+            if (photoEl) photoEl.style.backgroundImage = `url(${tier.image})`;
+          }
+        });
       })
       .catch(() => {});
   </script>

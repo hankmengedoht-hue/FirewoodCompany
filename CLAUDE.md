@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Firewood Company is a family-owned firewood supplier serving residential and commercial customers throughout Highlands-Cashiers, Atlanta, North Georgia, and Western North Carolina. The Highlands-Cashiers area is the company's core, highest-frequency residential customer base.
+The Firewood Company is a family-owned firewood supplier serving residential and commercial customers throughout Highlands-Cashiers, Western North Carolina, North Georgia, and Atlanta and surrounding areas. The Highlands-Cashiers area is the company's core, highest-frequency residential customer base.
 
 Established in **2015**, the company has earned the trust of restaurants, homeowners, and businesses by providing consistently high-quality firewood with dependable delivery and friendly service.
 
@@ -44,7 +44,7 @@ Deliver premium firewood that is properly seasoned, cut correctly, delivered on 
 - Hotels
 - Hospitality
 - Resorts
-- Five-star restaurants throughout Atlanta, North Georgia, and Western North Carolina
+- Four and five-star restaurants throughout Highlands-Cashiers, Western North Carolina, North Georgia, and Atlanta and surrounding areas
 
 ---
 
@@ -53,10 +53,9 @@ Deliver premium firewood that is properly seasoned, cut correctly, delivered on 
 Serving customers throughout (Highlands-Cashiers always listed first — it's the core repeat residential customer base):
 
 - Highlands-Cashiers
-- Atlanta
-- North Georgia
 - Western North Carolina
-- Upstate South Carolina
+- North Georgia
+- Atlanta and surrounding areas
 
 ---
 

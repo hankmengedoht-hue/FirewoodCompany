@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Firewood Company is a family-owned firewood supplier serving residential and commercial customers throughout the Southeastern United States.
+The Firewood Company is a family-owned firewood supplier serving residential and commercial customers throughout Atlanta, North Georgia, and Western North Carolina.
 
 Established in **2015**, the company has earned the trust of restaurants, homeowners, and businesses by providing consistently high-quality firewood with dependable delivery and friendly service.
 
@@ -57,8 +57,6 @@ Serving customers throughout:
 - Western North Carolina
 - Highlands
 - Upstate South Carolina
-
-Delivery available across much of the Southeastern United States.
 
 ---
 

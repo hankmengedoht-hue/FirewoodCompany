@@ -3,7 +3,7 @@
   "tiers": [
     {
       "name": "Quarter Cord",
-      "description": "Our smallest stacked delivery. Perfect for occasional fires or a first order.",
+      "description": "Our smallest stacked delivery, 4 ft long × 4 ft tall. Perfect for the occasional fires or a one-time firewood user.",
       "price": "$175",
       "image": "/FirewoodCompany/uploads/quarter-cord-firewood.webp",
       "featured": false,
@@ -11,7 +11,7 @@
     },
     {
       "name": "Face Cord",
-      "description": "One row of wood stacked 8 ft long × 4 ft tall. Ideal for occasional use through the season.",
+      "description": "One row of wood stacked 8 ft long × 4 ft tall. Ideal for the occasional user through the season.",
       "price": "$300",
       "image": "/FirewoodCompany/uploads/face-cord-firewood.webp",
       "featured": false,
@@ -19,7 +19,7 @@
     },
     {
       "name": "Half Cord",
-      "description": "Two rows stacked 8 ft long × 4 ft tall. The right amount for a typical residential season.",
+      "description": "Two rows stacked 8 ft long × 4 ft tall. Ideal size for a typical residential season.",
       "price": "$475",
       "image": "",
       "featured": true,
@@ -27,7 +27,7 @@
     },
     {
       "name": "Full Cord",
-      "description": "The standard firewood measurement: 8 ft long × 4 ft tall × 4 ft deep. Best value for heavy home use.",
+      "description": "Four rows of wood stacked 8 ft long × 4 ft tall. Best value for heavier home use.",
       "price": "$700",
       "image": "",
       "featured": false,
@@ -35,7 +35,7 @@
     },
     {
       "name": "Commercial / Bulk",
-      "description": "Custom quantities for restaurants, pizza ovens, BBQ kitchens, hotels, and resorts.",
+      "description": "Custom quantities for restaurants, brick oven pizza ovens, BBQ kitchens, hotels, and resorts.",
       "price": "",
       "image": "/FirewoodCompany/uploads/commercial-bulk-firewood.webp",
       "featured": false,

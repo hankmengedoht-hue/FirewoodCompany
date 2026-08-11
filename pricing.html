@@ -251,7 +251,7 @@
           if (descEl && tier.description) descEl.textContent = tier.description;
           if (tier.image) {
             const photoEl = card.querySelector('.pricing-card-photo');
-            if (photoEl) photoEl.style.backgroundImage = `url(${tier.image})`;
+            if (photoEl) photoEl.style.backgroundImage = `url("${tier.image}")`;
           }
         });
       })

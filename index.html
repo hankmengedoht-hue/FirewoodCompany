@@ -503,7 +503,7 @@
         if (data.hero_image) {
           const hero = document.querySelector('.hero');
           if (hero) {
-            hero.style.backgroundImage = `linear-gradient(rgba(38,33,29,0.6),rgba(38,33,29,0.6)), url(${data.hero_image})`;
+            hero.style.backgroundImage = `linear-gradient(rgba(38,33,29,0.6),rgba(38,33,29,0.6)), url("${data.hero_image}")`;
             hero.style.backgroundSize = 'cover';
             hero.style.backgroundPosition = 'center';
           }
@@ -534,7 +534,7 @@
           if (descEl && tier.description) descEl.textContent = tier.description;
           if (tier.image) {
             const photoEl = card.querySelector('.pricing-card-photo');
-            if (photoEl) photoEl.style.backgroundImage = `url(${tier.image})`;
+            if (photoEl) photoEl.style.backgroundImage = `url("${tier.image}")`;
           }
         });
       })

@@ -1,5 +1,5 @@
 {
-  "intro": "All wood types (White Oak, Oak, Hickory, and Seasoned Hardwoods) are the same price. Price varies by quantity. Delivery and stacking included.",
+  "intro": "White Oak, Oak, and Seasoned Hardwoods are the same price. Hickory is priced slightly higher due to limited availability, so call for current Hickory pricing. Price varies by quantity. Delivery and stacking included.",
   "tiers": [
     {
       "name": "Quarter Cord",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Face Cord",
-      "description": "One row of wood stacked 4 ft high × 8 ft long. Ideal for occasional use through the season.",
+      "description": "One row of wood stacked 8 ft long × 4 ft tall. Ideal for occasional use through the season.",
       "price": "$300",
       "image": "/FirewoodCompany/uploads/face-cord-firewood.webp",
       "featured": false,
@@ -19,7 +19,7 @@
     },
     {
       "name": "Half Cord",
-      "description": "Two rows stacked 4 ft high × 8 ft long. The right amount for a typical residential season.",
+      "description": "Two rows stacked 8 ft long × 4 ft tall. The right amount for a typical residential season.",
       "price": "$475",
       "image": "",
       "featured": true,
@@ -27,7 +27,7 @@
     },
     {
       "name": "Full Cord",
-      "description": "The standard firewood measurement: 4 ft × 4 ft × 8 ft. Best value for heavy home use.",
+      "description": "The standard firewood measurement: 8 ft long × 4 ft tall × 4 ft deep. Best value for heavy home use.",
       "price": "$700",
       "image": "",
       "featured": false,

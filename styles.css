@@ -241,6 +241,10 @@ nav a:hover { color: var(--white); text-decoration: none; }
   color: var(--white);
   padding: var(--space-8) 0;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero-eyebrow {
   font-family: 'Fraunces', Georgia, serif;

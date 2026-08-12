@@ -2,6 +2,14 @@
   "intro": "White Oak, Oak, and Seasoned Hardwoods are the same price. Hickory is priced slightly higher due to limited availability, so call for current Hickory pricing. Price varies by quantity. Delivery and stacking included.",
   "tiers": [
     {
+      "name": "The Weekender",
+      "description": "2 ft long × 2 ft tall. Enough wood for a weekend stay, Friday and Saturday night or Thursday through Saturday. Available only in the Highlands-Cashiers area.",
+      "price": "$99",
+      "image": "",
+      "featured": false,
+      "call_us": false
+    },
+    {
       "name": "Quarter Cord",
       "description": "Our smallest stacked delivery, 4 ft long × 4 ft tall. Perfect for the occasional fires or a one-time firewood user.",
       "price": "$175",

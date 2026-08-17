@@ -682,6 +682,35 @@ footer p { margin-bottom: 6px; }
   font-weight: 300;
 }
 
+/* --- Policy Page --- */
+.policy-content { max-width: 720px; }
+.policy-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  color: var(--text);
+}
+.policy-content h2:first-child { margin-top: 0; }
+.policy-content p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.85;
+  margin-bottom: var(--space-3);
+}
+.policy-content ul {
+  list-style: disc;
+  padding-left: 1.3em;
+  margin-bottom: var(--space-3);
+}
+.policy-content li {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: var(--space-2);
+}
+.policy-content a { color: var(--brand-dark); }
+
 /* --- Pricing --- */
 .pricing-section { background: var(--white); }
 .pricing-species { margin-top: var(--space-8); }

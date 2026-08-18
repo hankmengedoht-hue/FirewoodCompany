@@ -3,7 +3,7 @@
   "tiers": [
     {
       "name": "The Weekender",
-      "description": "2 ft long × 2 ft tall. Enough wood for a weekend stay, Friday and Saturday night or Thursday through Saturday. Available only in the Highlands-Cashiers area.",
+      "description": "2 ft long × 2 ft tall. Enough wood for a weekend stay, Friday and Saturday night. Available only in the Highlands-Cashiers area.",
       "price": "$99",
       "image": "",
       "featured": false,
@@ -11,7 +11,7 @@
     },
     {
       "name": "Quarter Cord",
-      "description": "Our smallest stacked delivery, 4 ft long × 4 ft tall. Perfect for the occasional fires or a one-time firewood user.",
+      "description": "Our smallest stacked delivery, 4 ft long × 4 ft tall. Perfect for the occasional fire or a one-time use.",
       "price": "$175",
       "image": "/FirewoodCompany/uploads/quarter-cord-firewood.webp",
       "featured": false,
@@ -43,7 +43,7 @@
     },
     {
       "name": "Commercial / Bulk",
-      "description": "Custom quantities for restaurants, brick oven pizza ovens, BBQ kitchens, hotels, and resorts.",
+      "description": "Custom quantities for restaurants, brick pizza ovens, BBQ kitchens, hotels, and resorts.",
       "price": "",
       "image": "/FirewoodCompany/uploads/commercial-bulk-firewood.webp",
       "featured": false,

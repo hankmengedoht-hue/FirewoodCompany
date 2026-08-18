@@ -506,11 +506,6 @@ nav a:hover { color: var(--white); text-decoration: none; }
 /* --- Contact CTA --- */
 .contact.bg-brand { background: var(--dark); }
 .contact-inner { text-align: center; color: var(--white); }
-.contact-inner h2 {
-  font-size: clamp(1.7rem, 3.6vw, 2.3rem);
-  font-weight: 600;
-  margin-bottom: var(--space-2);
-}
 .contact-inner > p { font-size: 17px; color: rgba(255,255,255,0.68); margin-bottom: var(--space-6); font-weight: 300; }
 .contact-details {
   display: flex;

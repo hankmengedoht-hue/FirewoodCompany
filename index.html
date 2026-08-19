@@ -499,6 +499,56 @@
     })();
   </script>
 
+  <!-- Photo Lightbox -->
+  <div id="photo-lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close photo preview">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script>
+    (function() {
+      const lightbox = document.getElementById('photo-lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const openLightbox = (src, alt) => {
+        if (!src) return;
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || '';
+        lightbox.classList.add('lightbox-open');
+      };
+      const closeLightbox = () => {
+        lightbox.classList.remove('lightbox-open');
+        lightboxImg.src = '';
+      };
+      const bindTrigger = (el, trigger) => {
+        el.addEventListener('click', trigger);
+        el.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
+        });
+      };
+
+      document.querySelectorAll('.pricing-card-photo').forEach(el => {
+        el.setAttribute('role', 'button');
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('aria-label', 'View full-size photo');
+        bindTrigger(el, () => {
+          const bg = getComputedStyle(el).backgroundImage;
+          const match = bg.match(/url\(["']?(.*?)["']?\)/);
+          if (match && match[1]) openLightbox(match[1], '');
+        });
+      });
+
+      document.querySelectorAll('.story-photo img, .customer-photo img').forEach(img => {
+        img.setAttribute('role', 'button');
+        img.setAttribute('tabindex', '0');
+        bindTrigger(img, () => openLightbox(img.src, img.alt));
+      });
+
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    })();
+  </script>
+
   <script>
     fetch('./content/home.json')
       .then(r => r.json())

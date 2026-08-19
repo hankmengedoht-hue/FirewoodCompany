@@ -4,7 +4,7 @@
     {
       "name": "The Weekender",
       "description": "2 ft long × 2 ft tall. Enough wood for a weekend stay, Friday and Saturday night. Available only in the Highlands-Cashiers area.",
-      "price": "$99",
+      "price": "$100",
       "image": "",
       "featured": false,
       "call_us": false
@@ -28,7 +28,7 @@
     {
       "name": "Half Cord",
       "description": "Two rows stacked 8 ft long × 4 ft tall. Ideal size for a typical residential season.",
-      "price": "$475",
+      "price": "$375",
       "image": "/FirewoodCompany/uploads/half-cord-firewood.webp",
       "featured": true,
       "call_us": false
@@ -36,7 +36,7 @@
     {
       "name": "Full Cord",
       "description": "Four rows of wood stacked 8 ft long × 4 ft tall. Best value for heavier home use.",
-      "price": "$700",
+      "price": "$650",
       "image": "/FirewoodCompany/uploads/full-cord-firewood.webp",
       "featured": false,
       "call_us": false

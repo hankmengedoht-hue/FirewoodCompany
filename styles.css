@@ -273,11 +273,16 @@ nav a:hover { color: var(--white); text-decoration: none; }
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.85);
   font-size: 13px;
   font-family: 'Karla', Arial, sans-serif;
   letter-spacing: 0.2px;
-  transition: color 0.18s ease;
+  background: rgba(20,16,13,0.45);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 8px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(2px);
+  transition: color 0.18s ease, background 0.18s ease;
 }
 .hero-contact-item svg {
   width: 15px;
@@ -287,6 +292,7 @@ nav a:hover { color: var(--white); text-decoration: none; }
 }
 .hero-contact-item:hover {
   color: var(--white);
+  background: rgba(20,16,13,0.6);
   text-decoration: none;
 }
 .hero-sub {

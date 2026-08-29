@@ -5,7 +5,7 @@
 #   1. Deploy https://github.com/sveltia/sveltia-cms-auth to Cloudflare
 #      Workers and note the resulting worker URL.
 #   2. Create a GitHub OAuth App (github.com/settings/applications/new):
-#        Homepage URL:            https://hankmengedoht-hue.github.io/FirewoodCompany
+#        Homepage URL:            https://firewoodcompany.us
 #        Authorization callback:  <your-worker-url>/callback
 #   3. In the Cloudflare Worker's env vars, set GITHUB_CLIENT_ID and
 #      GITHUB_CLIENT_SECRET (encrypted) from the OAuth App. Never put
@@ -19,9 +19,9 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.hankmengedoht.workers.dev
 
-site_url: https://hankmengedoht-hue.github.io/FirewoodCompany
+site_url: https://firewoodcompany.us
 media_folder: uploads
-public_folder: /FirewoodCompany/uploads
+public_folder: /uploads
 
 collections:
 

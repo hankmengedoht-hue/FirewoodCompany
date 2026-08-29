@@ -5,7 +5,7 @@
       "name": "The Weekender",
       "description": "2 ft long × 2 ft tall. Enough wood for a weekend stay, Friday and Saturday night. Available only in the Highlands-Cashiers area.",
       "price": "$100",
-      "image": "/FirewoodCompany/uploads/weekender-firewood.webp",
+      "image": "/uploads/weekender-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -13,7 +13,7 @@
       "name": "Quarter Cord",
       "description": "Our smallest stacked delivery, 4 ft long × 4 ft tall. Perfect for the occasional fire or a one-time use.",
       "price": "$175",
-      "image": "/FirewoodCompany/uploads/quarter-cord-firewood.webp",
+      "image": "/uploads/quarter-cord-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -21,7 +21,7 @@
       "name": "Face Cord",
       "description": "One row of wood stacked 8 ft long × 4 ft tall. Ideal for the occasional user through the season.",
       "price": "$300",
-      "image": "/FirewoodCompany/uploads/face-cord-firewood.webp",
+      "image": "/uploads/face-cord-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -29,7 +29,7 @@
       "name": "Half Cord",
       "description": "Two rows stacked 8 ft long × 4 ft tall. Ideal size for a typical residential season.",
       "price": "$375",
-      "image": "/FirewoodCompany/uploads/half-cord-firewood.webp",
+      "image": "/uploads/half-cord-firewood.webp",
       "featured": true,
       "call_us": false
     },
@@ -37,7 +37,7 @@
       "name": "Full Cord",
       "description": "Four rows of wood stacked 8 ft long × 4 ft tall. Best value for heavier home use.",
       "price": "$650",
-      "image": "/FirewoodCompany/uploads/full-cord-firewood.webp",
+      "image": "/uploads/full-cord-firewood.webp",
       "featured": false,
       "call_us": false
     },
@@ -45,7 +45,7 @@
       "name": "Commercial / Bulk",
       "description": "Custom quantities for restaurants, brick pizza ovens, BBQ kitchens, hotels, and resorts.",
       "price": "",
-      "image": "/FirewoodCompany/uploads/commercial-bulk-firewood.webp",
+      "image": "/uploads/commercial-bulk-firewood.webp",
       "featured": false,
       "call_us": true
     }

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hankmengedoht-hue.github.io/FirewoodCompany/sitemap.xml
+Sitemap: https://firewoodcompany.us/sitemap.xml

@@ -411,6 +411,14 @@ nav a:hover { color: var(--white); text-decoration: none; }
   font-family: 'Karla', Arial, sans-serif;
   letter-spacing: 0.4px;
 }
+.delivery-local-note {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto var(--space-4);
+}
 .delivery-note {
   text-align: center;
   color: var(--text-muted);
@@ -527,6 +535,14 @@ nav a:hover { color: var(--white); text-decoration: none; }
   justify-content: center;
   gap: var(--space-3);
 }
+.contact-map {
+  max-width: 640px;
+  margin: var(--space-6) auto 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.contact-map iframe { display: block; }
 .contact-link {
   display: flex;
   flex-direction: column;

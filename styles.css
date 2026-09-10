@@ -373,6 +373,35 @@ nav a:hover { color: var(--white); text-decoration: none; }
 
 /* --- Customers --- */
 .customers { background: var(--light); }
+
+/* --- Firewood Guide --- */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+.guide-card {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--brand);
+  border-radius: var(--radius);
+  padding: var(--space-5) var(--space-4);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.guide-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  text-decoration: none;
+}
+.guide-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+  color: var(--text);
+}
+.guide-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
 .edit-cols {
   display: grid;
   grid-template-columns: 1fr 1fr;

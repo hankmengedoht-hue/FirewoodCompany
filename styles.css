@@ -738,6 +738,7 @@ footer p { margin-bottom: 6px; }
 
 /* --- Policy Page --- */
 .policy-content { max-width: 720px; }
+.guide-return-btn { display: inline-block; margin-bottom: var(--space-6); }
 .policy-content h2 {
   font-size: 1.4rem;
   font-weight: 600;

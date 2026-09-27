@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Which firewood is best for cooking, and which is best for home heating? A side-by-side look at hickory, oak, and white oak for BBQ pits, pizza ovens, and wood stoves." />
-  <title>Best Firewood for Cooking vs. Heating | The Firewood Company</title>
-  <link rel="canonical" href="https://firewoodcompany.us/best-firewood-cooking-vs-heating.html" />
+  <meta name="description" content="Read real customer reviews for The Firewood Company, serving Highlands-Cashiers, Western North Carolina, North Georgia, and Atlanta." />
+  <title>Customer Reviews | The Firewood Company</title>
+  <link rel="canonical" href="https://firewoodcompany.us/reviews.html" />
 
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="website" />
   <meta property="og:site_name" content="The Firewood Company" />
-  <meta property="og:title" content="Best Firewood for Cooking vs. Heating" />
-  <meta property="og:description" content="A side-by-side look at hickory, oak, and white oak for BBQ pits, pizza ovens, and wood stoves." />
-  <meta property="og:url" content="https://firewoodcompany.us/best-firewood-cooking-vs-heating.html" />
-  <meta property="og:image" content="https://firewoodcompany.us/uploads/commercial-bulk-firewood.webp" />
+  <meta property="og:title" content="Customer Reviews | The Firewood Company" />
+  <meta property="og:description" content="Read real customer reviews for The Firewood Company." />
+  <meta property="og:url" content="https://firewoodcompany.us/reviews.html" />
+  <meta property="og:image" content="https://firewoodcompany.us/uploads/firewood-company-family.webp" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Best Firewood for Cooking vs. Heating" />
-  <meta name="twitter:description" content="A side-by-side look at hickory, oak, and white oak for BBQ pits, pizza ovens, and wood stoves." />
-  <meta name="twitter:image" content="https://firewoodcompany.us/uploads/commercial-bulk-firewood.webp" />
+  <meta name="twitter:title" content="Customer Reviews | The Firewood Company" />
+  <meta name="twitter:description" content="Read real customer reviews for The Firewood Company." />
+  <meta name="twitter:image" content="https://firewoodcompany.us/uploads/firewood-company-family.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,32 +68,40 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <h1>Best Firewood for Cooking vs. Heating</h1>
-      <p>Why restaurants reach for hickory and homeowners reach for oak.</p>
+      <h1>Customer Reviews</h1>
+      <p>Real reviews from real customers on Google.</p>
     </div>
   </section>
 
-  <!-- ARTICLE CONTENT -->
-  <section class="section policy-section">
-    <div class="container guide-return-wrap">
-      <a href="index.html#guide" class="btn btn-primary guide-return-btn">&larr; Return to Firewood Guide</a>
+  <!-- REVIEWS -->
+  <section class="section">
+    <div class="container">
+
+      <div class="testimonials-cta" style="margin-top: 0; margin-bottom: var(--space-6);">
+        <a href="https://g.page/r/Cbj80y-YJw7jEBM/review" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Leave a Google Review!</a>
+      </div>
+
+      <div class="reviews-grid" id="reviews-container">
+        <!-- Reviews are loaded from content/reviews.json -->
+      </div>
+
     </div>
-    <div class="container policy-content">
+  </section>
 
-      <p>For cooking, hickory is the top choice, prized for its bold aroma and intense heat. For home heating, white oak and oak are better suited, burning dense and long with low smoke and steady heat. The right wood depends on whether you're feeding a fire that needs to last all night or one that needs to sear a steak.</p>
-
-      <h2>Best for Cooking</h2>
-      <p>Hickory is the go-to for BBQ pits, smokers, and cooking fires. It burns hot and fast with a rich aroma that carries into the food, which is why it's a favorite for both backyard grillers and commercial kitchens.</p>
-
-      <h2>Best for Home Heating</h2>
-      <p>White oak is dense and long-burning with low smoke, an excellent choice for fireplaces and wood-burning stoves. Oak offers reliable heat output and a clean burn, a solid all-around choice for both residential and commercial use. Seasoned hardwoods, a mix of properly dried species, are a great value option for high-volume or everyday burning.</p>
-
-      <h2>For Restaurants and Commercial Kitchens</h2>
-      <p>We supply restaurants, brick pizza ovens, BBQ kitchens, hotels, and resorts across Highlands-Cashiers, Western North Carolina, North Georgia, and Atlanta, typically cut to 18-inch lengths and split to order. See our <a href="index.html#pricing">Commercial / Bulk pricing</a> for custom quantities.</p>
-
-      <h2>Ready to Order?</h2>
-      <p>Call <a href="tel:8282003050">828-200-3050</a> or <a href="index.html#contact">contact us online</a> to get your delivery scheduled, or see our <a href="index.html#pricing">current pricing</a>.</p>
-
+  <!-- CONTACT CTA -->
+  <section class="section contact bg-brand">
+    <div class="container contact-inner">
+      <p>Call or email us today.</p>
+      <div class="contact-details">
+        <a href="tel:8282003050" class="contact-link">
+          <span class="contact-label">Phone</span>
+          <span>828-200-3050</span>
+        </a>
+        <a href="mailto:bobhenritze@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span>bobhenritze@gmail.com</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -146,6 +154,34 @@
       overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     })();
+  </script>
+
+  <!-- Load Reviews -->
+  <script>
+    fetch('./content/reviews.json')
+      .then(r => r.json())
+      .then(data => {
+        if (!data || !data.reviews) return;
+        const container = document.getElementById('reviews-container');
+        const escapeHtml = (str) => String(str).replace(/[&<>"']/g, (c) => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        }[c]));
+        container.innerHTML = data.reviews.map(review => {
+          const rating = Math.max(1, Math.min(5, parseInt(review.rating, 10) || 5));
+          const stars = '&#9733;'.repeat(rating) + '&#9734;'.repeat(5 - rating);
+          return (
+            '<div class="review-card">' +
+              '<div class="review-stars">' + stars + '</div>' +
+              '<p class="review-text">' + escapeHtml(review.text) + '</p>' +
+              '<div class="review-meta">' +
+                '<span class="review-name">' + escapeHtml(review.name) + '</span>' +
+                '<span class="review-date">' + escapeHtml(review.date) + '</span>' +
+              '</div>' +
+            '</div>'
+          );
+        }).join('');
+      })
+      .catch(() => {});
   </script>
 
 </body>

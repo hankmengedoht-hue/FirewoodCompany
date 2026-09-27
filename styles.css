@@ -511,6 +511,44 @@ nav a:hover { color: var(--white); text-decoration: none; }
   margin-top: var(--space-6);
   text-align: center;
 }
+.testimonials-cta .btn { margin: 0 var(--space-2); }
+
+/* --- Reviews Page --- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+.review-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5) var(--space-4);
+  box-shadow: var(--shadow);
+}
+.review-stars {
+  color: var(--brand);
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: var(--space-2);
+}
+.review-text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: var(--space-3);
+}
+.review-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-size: 13px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--light-2);
+  padding-top: var(--space-2);
+}
+.review-name { font-weight: 700; color: var(--text); }
 
 /* --- FAQ --- */
 .faq { background: var(--white); }

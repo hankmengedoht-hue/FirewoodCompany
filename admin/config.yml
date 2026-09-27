@@ -107,3 +107,37 @@ collections:
                 name: call_us
                 widget: boolean
                 default: false
+
+  # ---- REVIEWS PAGE ----
+  - name: reviews
+    label: "Reviews Page"
+    files:
+      - name: reviews_content
+        label: Reviews Page
+        file: content/reviews.json
+        format: json
+        fields:
+          - label: Reviews
+            name: reviews
+            widget: list
+            summary: "{{fields.name}} — {{fields.date}}"
+            fields:
+              - label: Reviewer Name
+                name: name
+                widget: string
+
+              - label: Date (e.g. "2 days ago" or "March 2026")
+                name: date
+                widget: string
+
+              - label: Star Rating
+                name: rating
+                widget: number
+                default: 5
+                min: 1
+                max: 5
+                value_type: int
+
+              - label: Review Text
+                name: text
+                widget: text

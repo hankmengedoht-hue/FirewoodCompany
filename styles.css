@@ -876,6 +876,14 @@ footer p { margin-bottom: 6px; }
   color: var(--brand-dark);
   font-family: 'Karla', Arial, sans-serif;
 }
+.price-strike {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+.price-sale { color: var(--brand); }
 .pricing-disclaimer {
   font-size: 13px;
   color: var(--text-muted);

@@ -20,17 +20,19 @@
     {
       "name": "Face Cord",
       "description": "One row of wood stacked 8 ft long × 4 ft tall. Ideal for the occasional user through the season.",
-      "price": "$300",
+      "price": "$325",
+      "sale_price": "$275",
       "image": "/uploads/face-cord-firewood.webp",
-      "featured": false,
+      "featured": true,
       "call_us": false
     },
     {
       "name": "Half Cord",
       "description": "Two rows stacked 8 ft long × 4 ft tall. Ideal size for a typical residential season.",
       "price": "$375",
+      "sale_price": "$350",
       "image": "/uploads/half-cord-firewood.webp",
-      "featured": true,
+      "featured": false,
       "call_us": false
     },
     {

@@ -92,6 +92,12 @@ collections:
                 required: false
                 hint: Leave blank to show no price
 
+              - label: "Sale Price (optional)"
+                name: sale_price
+                widget: string
+                required: false
+                hint: If set, the regular price above shows with a strikethrough next to this sale price. Leave blank when there's no sale.
+
               - label: Card Photo
                 name: image
                 widget: image
